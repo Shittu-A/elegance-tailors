@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegance Tailors — Custom Styles, Perfect Fit</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Elegance Tailors</a>
+            <nav class="nav" id="nav">
+                <a href="#gallery">Styles</a>
+                <a href="#request">Request</a>
+                <a href="#about">About</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Bespoke Tailoring,<br />Made for You</h1>
+            <p>From traditional cuts to modern silhouettes — every stitch tells your story.</p>
+            <a href="#gallery" class="btn">Browse Styles</a>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>Our Styles</h2>
+            <div class="filter-btns" id="filterBtns">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="suits">Suits</button>
+                <button data-filter="traditional">Traditional</button>
+                <button data-filter="casual">Casual</button>
+            </div>
+            <div class="grid" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Request a Style -->
+    <section class="request" id="request">
+        <div class="container">
+            <h2>Request a Custom Style</h2>
+            <p>Tell us what you're looking for and we'll bring it to life.</p>
+            <form id="requestForm">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Email Address" required />
+                </div>
+                <select name="category" required>
+                    <option value="">Style Category</option>
+                    <option value="suits">Suits & Blazers</option>
+                    <option value="traditional">Traditional Wear</option>
+                    <option value="casual">Casual Wear</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea name="message" rows="4" placeholder="Describe the style you want — fabric, fit, colour, occasion..." required></textarea>
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
+            <p class="form-msg" id="formMsg"></p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Why Elegance Tailors?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>✂️ Handcrafted</h3>
+                    <p>Every piece is cut and sewn by master tailors with 20+ years of experience.</p>
+                </div>
+                <div class="about-card">
+                    <h3>📏 Perfect Fit</h3>
+                    <p>We take 15+ measurements to ensure your garment fits like a second skin.</p>
+                </div>
+                <div class="about-card">
+                    <h3>🧵 Premium Fabric</h3>
+                    <p>We source the finest materials from around the world — cotton, linen, wool, silk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Elegance Tailors. Crafted with care.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
